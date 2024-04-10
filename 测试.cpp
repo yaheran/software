@@ -21,17 +21,15 @@ int max_subarray_sum(vector<int>& nums) {
 
 	return max_sum;
 }
-
-//测试用例
 TEST(ADDtest, test1) {
 	vector<int> nums = {-2,11,-4,13,-5,-2};
 	int result=max_subarray_sum(nums);
 	EXPECT_EQ(result, 20);
 }
 TEST(ADDtest, test2) {
-	vector<int> nums = { -5,3,2,4 };
+	vector<int> nums = { -5,-3,-2,-4 };
 	int result = max_subarray_sum(nums);
-	EXPECT_EQ(result, 8);
+	EXPECT_EQ(result, 0);
 }
 TEST(ADDtest, test3) {
 	vector<int> nums = { -2,4,7,4};
